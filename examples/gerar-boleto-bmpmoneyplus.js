@@ -1,7 +1,7 @@
 const { Bancos, Boletos, streamToPromise } = require('../lib/index');
 
 const boleto = {
-    banco: new Bancos.Bradesco(),
+    banco: new Bancos.Bmpmoneyplus(),
     pagador: {
         nome: 'Pedro Silva',
         RegistroNacional: '12345678',
@@ -18,13 +18,13 @@ const boleto = {
         nome: 'Empresa Fictícia LTDA',
         cnpj: '43576788000191',
         dadosBancarios: {
-            carteira: '04',
-            agencia: '3380',
-            agenciaDigito: '1',
-            conta: '48',
-            contaDigito: '5',
-            nossoNumero: '0000448',
-            nossoNumeroDigito: '0'
+            carteira: '01',
+            agencia: '0001',
+            agenciaDigito: '',
+            conta: '08195047',
+            contaDigito: '9',
+            nossoNumero: '888889',
+            nossoNumeroDigito: '6'
         },
         endereco: {
             logradouro: 'Rua Pedro, 2',
@@ -35,13 +35,13 @@ const boleto = {
         }
     },
     boleto: {
-        numeroDocumento: '2819152J22',
+        numeroDocumento: '1022027K22',
         especieDocumento: 'DM',
-        valor: 1700.00,
+        valor: 1036.00,
         datas: {
-            vencimento: '10-01-2022',
-            processamento: '10-01-2022',
-            documentos: '10-01-2022'
+            vencimento: '11-01-2022',
+            processamento: '11-01-2022',
+            documentos: '11-01-2022'
         }
     }
 };
